@@ -14,9 +14,8 @@ package-lock.json
 
 
 #Uncoment and delete to deploy
-#/static/assets/sass/
-#/.bowerrc
-#/gulpfile.js
-#/README.md
-#/requirements.txt
-#/smart-grid-config.js
+/static/assets/sass/
+/static/assets/js/common.js
+/.bowerrc
+/gulpfile.js
+/README.md
