@@ -66,9 +66,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'digitalrush',
-        # 'USER': 'postgres',
+        'USER': 'postgres',
         'USER': 'digitalrushuser',
-        'PASSWORD': 'Guido!956',
+        # 'PASSWORD': 'Guido!956',
         'HOST': 'localhost',
         'PORT': '',
     }
