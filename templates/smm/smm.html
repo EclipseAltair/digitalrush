@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru/promotion/smm"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <p class="size-header bg-dark"></p>
+        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">SMM ПРОДВИЖЕНИЕ</p></h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center pb-4">
+                <i class="fas fa-comments-dollar fa-10x"></i>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-indent">
+                    <b>Social Media Marketing (SMM)</b> — рекламная кампания в социальных сетях, способствующая
+                    привлечению посетителей или покупателей в Ваш бизнес.
+                </p>
+                <p class="text-indent">
+                    На сайтах и в приложениях соц. сетей пользователи задерживаются дольше, чем на каких-либо
+                    других. Это создает постоянный контакт рекламодателя и клиента. Коммуникация с потенциальными
+                    потребителями облегчается самой концепцией. В одно нажатие пользователь может
+                    откликнуться на Вашу рекламу, что увеличивает вероятность выполнения клиентом нужных для Вас
+                    действий.
+                </p>
+                <p class="text-indent">
+                    Механизм заключается в создании информирующего объявления или ссылающегося на сайт, сообщество или
+                    страницу, распространяемое через социальные сети. Такие объявления вызывают большое доверие у
+                    потребителей за счёт прозрачности и открытого комментирования.
+                </p>
+                <p class="text-indent">
+                    От нас Вы получите любые услуги в этой области. Дизайн и реализация оформления страницы или
+                    сообщества. Ведение — наполнение постами, статьями, опросами и т.д. Настройка и
+                    оптимизация таргетинговой рекламы. Заказ рекламы у популярных групп и лидеров мнений для
+                    Вашей целевой аудитории.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <form id="config" method="post">{% csrf_token %}
+            <h2 class="text-center pt-3 pb-4">НАСТРОЙТЕ САМИ!</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 pt-2 border-conf">
+                    <h5 class="text-center border-bot">Основные опции</h5>
+                    {% for conf in config_true %}
+                        <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                        <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True" checked/>
+                        <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                        <br>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-4 pt-2 border-conf">
+                    <h5 class="text-center border-bot">Дополнительные опции</h5>
+                    {% for conf in config_false %}
+                        <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                        <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True"/>
+                        <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                        <br>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-8 border-conf">
+                    <p class="text-center"><b>Итого:</b><label id="total">{{ total }} ₽</label></p>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-4">СМОТРИТЕ ТАКЖЕ</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">SEO оптимизация</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'seo' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Контекстная реклама</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'context' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

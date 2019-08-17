@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru/development/catalog"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <p class="size-header bg-dark"></p>
+        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">САЙТ-КАТАЛОГ</p></h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center pb-4">
+                <i class="far fa-folder-open fa-10x"></i>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-indent">
+                    <b>Сайт-каталог</b> — это такой сайт, который полноценно информирует посетителя о компании
+                    и демонстрирует ее электронный каталог услуг или товаров. На сайте пользователи могут ознакомиться с
+                    расценками, описанием и в итоге обратиться в организацию для оформления заказа или покупки.
+                </p>
+                <p class="text-indent">
+                    Вам подойдет такой сайт, если главная цель Вашего бизнеса — представить большой объём информации.
+                    Мы сделаем это в удобном виде, создадим поддержку клиентам и предоставим оказание информационной
+                    поддержки реализовав каталог.
+                </p>
+                <p class="text-indent">
+                    Сайт-каталог будет успешен, если разработан лаконичный и приятный к использованию функционал
+                    для потенциальных клиентов и посетителей. И мы поможем создать для Вас технологичный и удобный
+                    сайт-каталог.
+                </p>
+                <p class="text-indent">
+                    Воспользовавшись нашими услугами Вы получите современный сервис, с удобной панелью администрирования,
+                    с помощью которой без труда можно добавлять, изменять или удалять новые товары или услуги.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-3 pb-4">НАСТРОЙТЕ САМИ!</h2>
+        <div id="config" class="row justify-content-center">
+            <div class="col-lg-4 pt-2 border-conf">
+                <h5 class="text-center border-bot">Основные опции</h5>
+                {% for conf in config_true %}
+                    <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                    <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True" checked/>
+                    <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                    <br>
+                {% endfor %}
+            </div>
+            <div class="col-lg-4 pt-2 border-conf">
+                <h5 class="text-center border-bot">Дополнительные опции</h5>
+                {% for conf in config_false %}
+                    <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                    <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True"/>
+                    <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                    <br>
+                {% endfor %}
+            </div>
+            <div class="col-lg-8 border-conf">
+                <p class="text-center"><b>Итого:</b><label id="total">{{ total }} ₽</label></p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-4">СМОТРИТЕ ТАКЖЕ</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Лендинг</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'landing' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Сайт-визитка</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'card' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Интернет-магазин</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'online_store' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru/promotion"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <p class="size-header bg-dark"></p>
+        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">ПРОДВИЖЕНИЕ САЙТА</p></h1>
+        <h2 class="text-center pt-5 pb-5">ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+        <div class="row align-self-center">
+            <div class="col-lg">
+                <ul>
+                    <li>
+                        <p class="text-indent">
+                            • Вы получаете возможность в одном месте пройти весь путь от создания сайта и социальных
+                            страниц до их полной раскрутки во всех маркетинговых направлениях.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Поисковая оптимизация с нами — это задействование всех внешних и внутренних ресурсов для
+                            поднятия Вашего сайта на самые высокие позиции выдачи.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Развитие проекта в сфере социальных сетей однозначно увеличит приток клиентов, а мы
+                            позаботимся о том, чтобы эта важная часть интернет-маркетинга была задействована в Вашем
+                            бизнесе.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Главная задача контекстной рекламы — настройка выгодного и точечного привлечения
+                            потребителей из целевой аудитории. Мы сделаем это профессионально, с учетом Ваших финансовых
+                            возможностей.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Помогаем и поддерживаем наших клиентов. Отвечаем на любые поставленные вопросы.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg hide">
+                <div class="detect-wrapper">
+                    <div class="bar"></div>
+                    <div class="inner-circle">
+                        <div class="inner-circle-success"></div>
+                    </div>
+                    <div class="radial"></div>
+                    <div class="back"></div>
+                    <div class="a1"></div>
+                    <div class="a2"></div>
+                    <div class="a3"></div>
+                    <div class="a4"></div>
+                    <div class="a5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-5">ВИДЫ РЕКЛАМЫ</h2>
+        <div class="row">
+            <div class="col-lg mb-3">
+                <div class="card border-primary mb-3 size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-4 pb-4">SEO оптимизация</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Однозначно то, с чего стоит начать продвигать свой сайт в интернете — Search Engine
+                            Optimization (SEO). Это комплекс мер, который поднимает сайт как можно выше Ваших конкурентов
+                            в поисковой выдаче по определенным поисковым запросам.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-primary">
+                        <a href="{% url 'seo' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg mb-3">
+                <div class="card border-primary mb-3 size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-4 pb-4">SMM продвжение</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Социальные сети уже давно занимают огромную долю трафика пользователей интернета. Поэтому
+                            Ваш бизнес обязательно должен быть представлен и раскручен в социальных сетях. Мы сделаем
+                            Вашему проекту комплексное Social Media Marketing (SMM) продвижение, от создания страницы
+                            до таргетинговой рекламы, по популярным соц. сетям.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-primary">
+                        <a href="{% url 'smm' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg mb-3">
+                <div class="card border-primary mb-3 size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-4 pb-4">Контекстная реклама</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Контекстная реклама считается самой эффективной, но в то же время и самой дорогой рекламой
+                            в интернете. Яндекс.Директ и Google AdWords - сервисы предоставляющие возможность разместить
+                            рекламные блоки в поисковиках и на сайтах-партнерах. Мы разместим, отследим эффективность
+                            и проконтролируем Вашу рекламную кампанию.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-primary">
+                        <a href="{% url 'context' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

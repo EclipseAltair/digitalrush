@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru/prices"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <p class="size-header bg-dark"></p>
+        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">КОНТАКТЫ</p></h1>
+        <h2 class="text-center"><p class="pt-5 pb-4">КАК С НАМИ СВЯЗАТЬСЯ?</p></h2>
+        <div class="row align-self-center">
+            <div class="col-lg-6 text-center pt-3 pb-4">
+                <i class="far fa-address-book fa-10x"></i>
+            </div>
+            <div class="col-lg-6">
+                <div class="line">
+                    <p><i class="fas fa-at"></i> info@digitalrush.ru</p>
+                    <p><i class="fas fa-phone"></i> +79115596616</p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Архангельск</p>
+                    <p>-----------------------</p>
+                    <a href="https://vk.com/digitalrushru" target="_blank" class="social"><i class="fab fa-vk fa-2x"></i></a>
+                    <a href="https://instagram.com/digitalrushru" target="_blank" class="social"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://facebook.com/" target="_blank" class="social"><i class="fab fa-facebook fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

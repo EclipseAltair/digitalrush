@@ -1,0 +1,195 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <div class="row align-items-center size-screen">
+            <div class="col-md-4 mx-auto text-center">
+                <p>
+                <h1>DIGITALRUSH</h1>
+                <h4>digital-агентство по разработке и продвижению сайтов</h4>
+                </p>
+            </div>
+            <div class="col-12">
+                <div id="mouse">
+                    <div id="wheel"></div>
+                    <div class="scroll"></div>
+                    <div class="scroll2"></div>
+                    <div class="scroll3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__void">
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-5">УСЛУГИ</h2>
+        <h3 class="text-center"><p class="pt-5 pb-5 bg-primary">РАЗРАБОТКА САЙТА</p></h3>
+        <div class="row">
+            <div class="col-md mb-3">
+                <div class="card border-light mb-3 size-content pt-3">
+                    <div class="card-header text-center">
+                        <i class="fas fa-tablet-alt fa-5x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Полная адаптивность</h5>
+                        <p class="card-text">
+                            Сайт оптимизирован и в зависимости от разрешения правильно отображается на всех устройствах.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md mb-3">
+                <div class="card border-light mb-3 size-content pt-3">
+                    <div class="card-header text-center">
+                        <i class="fas fa-paint-brush fa-5x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Оригинальный дизайн</h5>
+                        <p class="card-text">
+                            Индивидульно проработное оформление, созданное дизайнером-разработчиком, а не на шаблонном
+                            конструкторе.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md mb-3">
+                <div class="card border-light mb-3 size-content pt-3">
+                    <div class="card-header text-center">
+                        <i class="fas fa-cogs fa-5x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Передовые технологии</h5>
+                        <p class="card-text">
+                            Для качественной и быстрой разработки мы используем новейшие методы и инструменты.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md mb-3">
+                <div class="card border-light mb-3 size-content pt-3">
+                    <div class="card-header text-center">
+                        <i class="fas fa-coins fa-5x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Низкая стоимость</h5>
+                        <p class="card-text">
+                            Наша ценовая политика на подрядок ниже, чем у большинства студий, что не влияет на качество
+                            работы.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md mb-3">
+                <div class="card border-light mb-3 size-content pt-3">
+                    <div class="card-header text-center">
+                        <i class="fas fa-dollar-sign fa-5x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Скидка на последующее продвижение</h5>
+                        <p class="card-text">
+                            Необходимо, чтобы о Вас узнали. Заказав сайт, получите скидку на продвижение в интернете.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-2 pb-4">
+            <div class="col-md">
+                <a href="{% url 'development' %}">
+                    <button type="button" class="btn btn-outline-primary btn-block pt-5 pb-5">
+                        <p class="font-size__1_5rem">ПОДРОБНЕЕ</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <h3 class="text-center"><p class="pt-5 pb-5 bg-primary">ПРОДВИЖЕНИЕ САЙТА</p></h3>
+        <div class="row">
+            <div class="col-md mb-3">
+                <div class="card border-light mb-3 size-content pt-3">
+                    <div class="card-header text-center">
+                        <i class="fas fa-list-ol fa-5x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Полный спектр услуг</h5>
+                        <p class="card-text">
+                            Развивайте сайт во всех направляениях: SEO оптимизация, SMM продвижение, контекстная
+                            реклама.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md mb-3">
+                <div class="card border-light mb-3 size-content pt-3">
+                    <div class="card-header text-center">
+                        <i class="fas fa-bullhorn fa-5x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Моментальная отдача</h5>
+                        <p class="card-text">
+                            Результат рекламы Вашего сайта в интернете не заставит себя долго ждать.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-2 pb-4">
+            <div class="col-md">
+                <a href="{% url 'promotion' %}">
+                    <button type="button" class="btn btn-outline-primary btn-block pt-5 pb-5">
+                        <p class="font-size__1_5rem">ПОДРОБНЕЕ</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-5">ЦЕНЫ</h2>
+        <div class="row">
+            <div class="col-md mb-3">
+                <div class="card border-primary mb-3 size-content">
+                    <div class="card-header bg-primary border-primary text-center">
+                        <h4 class="pt-4 pb-4">РАЗРАБОТКА САЙТА</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-center">
+                            <i class="fas fa-laptop-code fa-5x"></i>
+                        </p>
+                        <p class="text-center">
+                            <span class="font-size__2_5rem">600+ ₽</span>
+                        </p>
+                    </div>
+                    <a href="{% url 'prices' %}#dev">
+                        <button class="btn btn-block btn-outline-primary py-3">ПОДРОБНЕЕ</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md mb-3">
+                <div class="card border-primary mb-3 size-content">
+                    <div class="card-header bg-primary border-primary text-center">
+                        <h4 class="pt-4 pb-4">ПРОДВЖИЕНИЕ САЙТА</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-center">
+                            <i class="fas fa-chart-line fa-5x"></i>
+                        </p>
+                        <p class="card-text text-center">
+                            <span class="font-size__2_5rem">500+ ₽</span>
+                        </p>
+                    </div>
+                    <a href="{% url 'prices' %}#prom">
+                        <button class="btn btn-block btn-outline-primary py-3">ПОДРОБНЕЕ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__void">
+    </section>
+{% endblock %}

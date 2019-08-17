@@ -1,0 +1,22 @@
+*.sqlite3
+*.pyc
+*~
+__pycache__
+.idea/
+.vscode/
+digitalrushenv/
+*env/
+node_modules/
+migrations
+static/assets/libs/
+package.json
+package-lock.json
+
+
+#Uncoment and delete to deploy
+#/static/assets/sass/
+#/.bowerrc
+#/gulpfile.js
+#/README.md
+#/requirements.txt
+#/smart-grid-config.js

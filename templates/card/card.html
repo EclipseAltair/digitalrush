@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru/development/card"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <p class="size-header bg-dark"></p>
+        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">САЙТ-ВИЗИТКА</p></h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center pb-4">
+                <i class="fas fa-address-card fa-10x"></i>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-indent">
+                    <b>Сайт-визитка</b> — хороший вариант, если Вы занимаетесь бизнесом и хотите, чтобы о нём узнали в
+                    интернете. Чаще всего, состоит из одной или небольшого количества страниц и заключает в себе
+                    основную информацию о частном лице, компании, услугах или товарах, контакты.
+                </p>
+                <p class="text-indent">
+                    Вы можете добавить к сайту-визитке блог, библиотеку статей, фото и видео галереи. Это полноценный
+                    ресурс, который освещает услуги фирмы или предпринимателя.
+                </p>
+                <p class="text-indent">
+                    В сравнении с крупными проектами сайт-визитка не требователен к хостингу. Для него достаточно
+                    минимального места на жестком диске хостинг-провайдера, что экономит на его содержании.
+                </p>
+                <p class="text-indent">
+                    Сайт-визитка не предусматривает интерактивной составляющей, как высоконагруженные динамические
+                    проекты, что делает создание для Вас более дешевым, простым и быстрым.
+                </p>
+                <p class="text-indent">
+                    Так же сайт-визитку выбирают люди, имеющие увлечение, которым они хотят поделиться с окружающими.
+                    Обычно на таких ресурсах размещается полезная информация от автора.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-3 pb-4">НАСТРОЙТЕ САМИ!</h2>
+        <div id="config" class="row justify-content-center">
+            <div class="col-lg-4 pt-2 border-conf">
+                <h5 class="text-center border-bot">Основные опции</h5>
+                {% for conf in config_true %}
+                    <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                    <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True" checked/>
+                    <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                    <br>
+                {% endfor %}
+            </div>
+            <div class="col-lg-4 pt-2 border-conf">
+                <h5 class="text-center border-bot">Дополнительные опции</h5>
+                {% for conf in config_false %}
+                    <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                    <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True"/>
+                    <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                    <br>
+                {% endfor %}
+            </div>
+            <div class="col-lg-8 border-conf">
+                <p class="text-center"><b>Итого:</b><label id="total">{{ total }} ₽</label></p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-4">СМОТРИТЕ ТАКЖЕ</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Лендинг</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'landing' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Сайт-каталог</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'catalog' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Интернет-магазин</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'online_store' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

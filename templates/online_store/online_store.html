@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru/development/onlinestore"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <p class="size-header bg-dark"></p>
+        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">ИНТЕРНЕТ-МАГАЗИН</p></h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center pb-4">
+                <i class="fas fa-cart-arrow-down fa-10x"></i>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-indent">
+                    <b>Интернет-магазин</b> — интерактивный сайт, который рекламирует товары или услуги, принимает
+                    заказы на покупку, предоставляет пользователю выбор варианта расчета и способа получения заказа.
+                </p>
+                <p class="text-indent">
+                    Чертами интернет-магазина являются: личный кабинет пользователя, платежные системы и
+                    функция добавления товаров в онлайн-режиме.
+                </p>
+                <p class="text-indent">
+                    Обычно выделяются 2 типа интернет-магазинов: b2b — продажа товаров или предоставление услуг
+                    коммерческим организациям и b2c — то же самое, но уже физическим лицам. Мы разработаем для Вас
+                    высокотехнологичный магазин любого типа в любой
+                    отрасли.
+                </p>
+                <p class="text-indent">
+                    Стоит отметить, что интернет-магазин обладает большим преимуществом перед классическим бизнесом.
+                    Он не нуждается в представительном офисе, складских помещениях, не несет расходы на содержание
+                    помещений, Вы можете управлять продажами даже из своей квартиры, что сильно экономит Ваш бюджет.
+                    Именно поэтому настоящее и будущее коммерции за торговлей в интернете.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-3 pb-4">НАСТРОЙТЕ САМИ!</h2>
+        <div id="config" class="row justify-content-center">
+            <div class="col-lg-4 pt-2 border-conf">
+                <h5 class="text-center border-bot">Основные опции</h5>
+                {% for conf in config_true %}
+                    <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                    <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True" checked/>
+                    <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                    <br>
+                {% endfor %}
+            </div>
+            <div class="col-lg-4 pt-2 border-conf">
+                <h5 class="text-center border-bot">Дополнительные опции</h5>
+                {% for conf in config_false %}
+                    <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                    <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True"/>
+                    <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                    <br>
+                {% endfor %}
+            </div>
+            <div class="col-lg-8 border-conf">
+                <p class="text-center"><b>Итого:</b><label id="total">{{ total }} ₽</label></p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-4">СМОТРИТЕ ТАКЖЕ</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Лендинг</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'landing' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Сайт-визитка</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'card' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">Сайт-каталог</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'catalog' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

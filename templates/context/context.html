@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="http://digitalrush.ru/promotion/context"/>{% endblock %}
+{% block title %}{% endblock %}
+{% block description %}<meta name="description" content="">{% endblock %}
+{% block keywords %}<meta name="keywords" content="">{% endblock %}
+
+{% block content %}
+    <section class="section__black">
+        <p class="size-header bg-dark"></p>
+        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">КОНТЕКСТНАЯ РЕКЛАМА</p></h1>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center pb-4">
+                <i class="fas fa-ad fa-10x"></i>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-indent">
+                    <b>Контекстная реклама</b> — вид рекламы в интернете, где объявление соответствует содержанию и
+                    связано по смыслу с контентом страницы.
+                </p>
+                <p class="text-indent">
+                    Она появляется в поисковой выдаче или на партнерских сайтах. Индивидуально сопоставляется с
+                    поисковыми запросами пользователя и напрямую зависит от его предпочтений. Такой подход имеет самую
+                    высокую точность попадания в целевую аудиторию, что существенно увеличивает вероятность отклика на
+                    Ваше объявление.
+                </p>
+                <p class="text-indent">
+                    Наиболее эффективным решением внедрения контекстной рекламы является одновременный охват
+                    Яндекс.Директ и Google AdWords, так как процент трафика проходящий по поисковикам Яндекс и Google
+                    сейчас приблизительно одинаков.
+                </p>
+                <p class="text-indent">
+                    Мы настроим для Вас данные сервисы, проконтролируем процесс интеграции и оптимизируем расходы за
+                    клик.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <form id="config" method="post">{% csrf_token %}
+            <h2 class="text-center pt-3 pb-4">НАСТРОЙТЕ САМИ!</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 pt-2 border-conf">
+                    <h5 class="text-center border-bot">Основные опции</h5>
+                    {% for conf in config_true %}
+                        <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                        <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True" checked/>
+                        <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                        <br>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-4 pt-2 border-conf">
+                    <h5 class="text-center border-bot">Дополнительные опции</h5>
+                    {% for conf in config_false %}
+                        <label for="box-{{ conf.id }}">{{ conf.name }}</label>
+                        <input type="checkbox" id="box-{{ conf.id }}" name="bool" value="True"/>
+                        <label for="box-{{ conf.id }}">+{{ conf.price }} ₽</label>
+                        <br>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-8 border-conf">
+                    <p class="text-center"><b>Итого:</b><label id="total">{{ total }} ₽</label></p>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-4">СМОТРИТЕ ТАКЖЕ</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">SEO оптимизация</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'seo' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="card border-primary size-content">
+                    <div class="card-header bg-primary border-primary">
+                        <h5 class="pt-3 pb-3">SMM продвижение</h5>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a href="{% url 'smm' %}">
+                            <strong>Подробнее</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
