@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from django.contrib.sitemaps.views import sitemap
 from .sitemap import StaticViewSitemap
 
+
 sitemaps = {
     'static': StaticViewSitemap,
     }

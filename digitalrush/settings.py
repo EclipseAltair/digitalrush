@@ -18,6 +18,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
     'analytical',
     'main',
@@ -101,7 +103,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-SITE = 1
+SITE_ID = 1
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
