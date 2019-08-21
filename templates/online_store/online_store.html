@@ -8,7 +8,7 @@
 
 {% block content %}
     <section class="section__black">
-        <p class="size-header bg-dark"></p>
+        <p class="size-header bg-black"></p>
         <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">ИНТЕРНЕТ-МАГАЗИН</p></h1>
         <div class="row align-items-center">
             <div class="col-lg-6 text-center pb-4">
@@ -60,7 +60,7 @@
                 {% endfor %}
             </div>
             <div class="col-lg-8 border-conf">
-                <p class="text-center"><b>Итого:</b><label id="total">{{ total }} ₽</label></p>
+                <p class="text-center"><b>Итого:</b><label id="total">{{ total }}</label><span class="total"> ₽</span></p>
             </div>
         </div>
     </section>
