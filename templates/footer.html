@@ -7,9 +7,11 @@
             <h3 class="text-center pt-4 pb-4 border-bot">СВЯЖИТЕСЬ С НАМИ!</h3>
             <p class="helvetica">Хотите заказать услуги или остались вопросы - мы свяжемся с Вами!</p>
             <form id="feedback" action="{% url 'feedback' %}" method="POST" class="">{% csrf_token %}
-                {{ form.name }}
-                {{ form.phone }}
-                <button id="button-feedback" class="btn btn-primary btn-block pt-3 pb-3 mt-3 mb-3" type="submit">ОТПРАВИТЬ</button>
+                    <label for="name">Имя:</label>
+                    {{ form.name }}
+                    <label for="phone" class="mt-2">Телефон:</label>
+                    {{ form.phone }}
+                <button id="button-feedback" class="btn btn-outline-primary btn-block pt-3 pb-3 mt-3 mb-3" type="submit">ОТПРАВИТЬ</button>
             </form>
         </div>
     </div>
@@ -21,9 +23,9 @@
         </div>
         <div class="col col-md-3">
             <p>________________</p>
-            <a href="https://vk.com/digitalrushru" target="_blank" class="social"><i class="fab fa-vk fa-2x"></i></a>
-            <a href="https://instagram.com/digitalrushru" target="_blank" class="social"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://facebook.com/" target="_blank" class="social"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://vk.com/digitalrushru" target="_blank" aria-label="Vk" class="social"><i class="fab fa-vk fa-2x"></i></a>
+            <a href="https://instagram.com/digitalrushru" target="_blank"  aria-label="Instagram" class="social"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook" class="social"><i class="fab fa-facebook fa-2x"></i></a>
         </div>
         <div class="col col-md-3">
             <p>________________</p>

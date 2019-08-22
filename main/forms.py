@@ -5,12 +5,14 @@ from .models import Client
 
 class ClientForm(forms.ModelForm):
     name = forms.CharField(max_length=32, required=True, widget=forms.TextInput(attrs={
-        'class': 'form-control form-control-lg mt-3',
+        'id': 'name',
+        'class': 'form-control form-control-lg',
         'name': 'name',
         'placeholder': 'Ваше имя'
     }))
     phone = forms.CharField(max_length=12, required=True, widget=forms.TextInput(attrs={
-        'class': 'form-control form-control-lg mt-2',
+        'id': 'phone',
+        'class': 'form-control form-control-lg',
         'name': 'phone',
         'placeholder': 'Ваш телефон'
     }))
