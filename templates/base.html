@@ -4,7 +4,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  {% yandex_metrica %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +13,9 @@
   {% block description %}{% endblock %}
   {% block keywords %}{% endblock %}
   <link rel="manifest" href="/manifest.json">
+  {% yandex_metrica %}
+  <meta name="yandex-verification" content="eb0cb5959c13dad8" />
+  <meta name="google-site-verification" content="oYatabzPh0zvvFsjzmXiJ-04aLuiGmMNg8DHB7Eqj0E" />
   <!-- Template Basic Images -->
   <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16" />
   <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32" />

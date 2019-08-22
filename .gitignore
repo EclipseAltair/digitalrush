@@ -5,7 +5,6 @@ __pycache__
 .idea/
 .vscode/
 digitalrushenv/
-*env/
 node_modules/
 migrations
 static/assets/libs/
