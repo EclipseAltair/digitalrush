@@ -2,9 +2,19 @@
 {% load static %}
 
 {% block canonical %}<link rel="canonical" href="http://digitalrush.ru/development/card"/>{% endblock %}
-{% block title %}Создание сайта визитки Архангельск | Разработка сайта визитки{% endblock %}
+{% block title %}<title>Создание сайта визитки Архангельск | Разработка сайта визитки</title>{% endblock %}
 {% block description %}<meta name="description" content="Сайт визитка под ключ 🔑 от ведущего digital-агентства DigitalRush принесет широкую известность Вам и Вашему бизнесу.">{% endblock %}
 {% block keywords %}<meta name="keywords" content="сайт визитка, создание сайта визитки, сайт визитика под ключ">{% endblock %}
+{% block og %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DigitalRush">
+<meta property="og:title" content="Создание сайта-визитки под 🔑">
+<meta property="og:url" content="http://digitalrush.ru/development/card">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="http://digitalrush.ru/static/img/og.png">
+<meta property="og:image:width" content="537">
+<meta property="og:image:height" content="240">
+{% endblock %}
 
 {% block content %}
     <section class="section__black">

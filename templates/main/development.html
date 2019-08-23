@@ -2,9 +2,19 @@
 {% load static %}
 
 {% block canonical %}<link rel="canonical" href="http://digitalrush.ru/development"/>{% endblock %}
-{% block title %}Создание сайтов в Архангельске | Разработка сайтов Архангельск{% endblock %}
+{% block title %}<title>Создание сайтов Архангельск | Разработка сайтов в Архангельске</title>{% endblock %}
 {% block description %}<meta name="description" content="Создание сайта под ключ 🔑 от студии DigitalRush — это отличное решение высокого качества по низкой цене.">{% endblock %}
 {% block keywords %}<meta name="keywords" content="создание сайтов, разработка сайтов, разработать сайт, заказать сайт">{% endblock %}
+{% block og %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DigitalRush">
+<meta property="og:title" content="Создание сайтов под 🔑">
+<meta property="og:url" content="http://digitalrush.ru/development">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="http://digitalrush.ru/static/img/og.png">
+<meta property="og:image:width" content="537">
+<meta property="og:image:height" content="240">
+{% endblock %}
 
 {% block content %}
     <section class="section__black">

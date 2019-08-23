@@ -2,9 +2,19 @@
 {% load static %}
 
 {% block canonical %}<link rel="canonical" href="http://digitalrush.ru/development/landing"/>{% endblock %}
-{% block title %}Создание лендинга Архангельск | Закать лендинг пейдж{% endblock %}
+{% block title %}<title>Создание лендинга Архангельск | Закать лендинг пейдж</title>{% endblock %}
 {% block description %}<meta name="description" content="Разработка лендинга под ключ 🔑 от ведущего digital-агентства DigitalRush — это залог успеха Вашего бизнеса.">{% endblock %}
 {% block keywords %}<meta name="keywords" content="лендинг, создание лендинга, заказать лендинг, разработка лендинга, лендинг под ключ, лендинг пейдж">{% endblock %}
+{% block og %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DigitalRush">
+<meta property="og:title" content="Создание лендинга под 🔑">
+<meta property="og:url" content="http://digitalrush.ru/development/landing">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="http://digitalrush.ru/static/img/og.png">
+<meta property="og:image:width" content="537">
+<meta property="og:image:height" content="240">
+{% endblock %}
 
 {% block content %}
     <section class="section__black">

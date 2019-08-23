@@ -9,9 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#000">
   {% block canonical %}{% endblock %}
-  <title>{% block title %}{% endblock %}</title>
+  {% block title %}{% endblock %}
   {% block description %}{% endblock %}
   {% block keywords %}{% endblock %}
+  {% block og %}{% endblock %}
   <link rel="manifest" href="/manifest.json">
   {% yandex_metrica %}
   <meta name="yandex-verification" content="eb0cb5959c13dad8" />
