@@ -4,5 +4,5 @@ from . import views
 
 
 urlpatterns = [
-    path('promotion/seo', views.seo, name='seo'),
+    path('seo', views.seo, name='seo'),
 ]

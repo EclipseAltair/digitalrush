@@ -4,5 +4,5 @@ from . import views
 
 
 urlpatterns = [
-    path('promotion/smm', views.smm, name='smm'),
+    path('smm', views.smm, name='smm'),
 ]

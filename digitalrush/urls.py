@@ -42,13 +42,6 @@ admin.autodiscover()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
-    path('', include('landing.urls')),
-    path('', include('card.urls')),
-    path('', include('catalog.urls')),
-    path('', include('online_store.urls')),
-    path('', include('seo.urls')),
-    path('', include('smm.urls')),
-    path('', include('context.urls')),
     path('robots.txt', lambda r: HttpResponse(robots, content_type="text/plain")),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('manifest.json', lambda r: HttpResponse(manifest, content_type="application/json"))
