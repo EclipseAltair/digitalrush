@@ -2,6 +2,7 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
-    path('promotion/context/', views.context, name='context'),
+    path('promotion/context', views.context, name='context'),
 ]

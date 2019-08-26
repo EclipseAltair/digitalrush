@@ -2,6 +2,7 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
-    path('promotion/smm/', views.smm, name='smm'),
+    path('promotion/smm', views.smm, name='smm'),
 ]

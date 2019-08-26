@@ -2,6 +2,7 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
-    path('promotion/seo/', views.seo, name='seo'),
+    path('promotion/seo', views.seo, name='seo'),
 ]
