@@ -13,6 +13,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['92.63.107.29', 'digitalrush.ru', 'localhost']
 
 INSTALLED_APPS = [
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

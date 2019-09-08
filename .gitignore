@@ -15,6 +15,7 @@ package-lock.json
 #Uncoment and delete to deploy
 /static/assets/sass/
 /static/assets/js/common.js
+/static/static/
 /.bowerrc
 /gulpfile.js
 /README.md

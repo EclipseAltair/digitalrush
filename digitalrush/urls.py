@@ -40,6 +40,7 @@ manifest = '{"name":"DigitalRush",' \
 admin.autodiscover()
 
 urlpatterns = [
+    path('grappelli/', include('grappelli.urls')),
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('robots.txt', lambda r: HttpResponse(robots, content_type="text/plain")),
