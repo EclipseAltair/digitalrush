@@ -109,10 +109,10 @@ SITE_ID = 1
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'django4manager@gmail.com'
-EMAIL_HOST_PASSWORD = 'GuidoVan!956'
-DEFAULT_FROM_EMAIL = 'django'
-DEFAULT_TO_EMAIL = 'django4manager@gmail.com'
+EMAIL_HOST_USER = 'digitalrushmailer@gmail.com'
+EMAIL_HOST_PASSWORD = '3ts-SXg-Ndh-dbE'
+DEFAULT_FROM_EMAIL = 'digitalrush'
+DEFAULT_TO_EMAIL = 'digitalrushmailer@gmail.com'
 
 YANDEX_METRICA_COUNTER_ID = '55015417'
 YANDEX_METRICA_WEBVISOR	= True
