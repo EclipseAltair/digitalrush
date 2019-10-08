@@ -17,7 +17,7 @@
 {% endblock %}
 
 {% block content %}
-    <section class="section__black">
+    <section class="parallax-screen" data-parallax data-src="{% static 'img/bg.jpg' %}" data-speed="0.7">
         <div class="row align-items-center size-screen">
             <div class="col-md-4 mx-auto text-center">
                 <p>
@@ -34,8 +34,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="parallax-window" data-parallax data-src="{% static 'img/bg.jpg' %}" data-speed="0.7">
     </section>
     <section class="section__black">
         <h2 class="text-center pt-5 pb-5">УСЛУГИ</h2>
@@ -199,6 +197,6 @@
             </div>
         </div>
     </section>
-    <section class="parallax-window" data-parallax data-src="{% static 'img/bg.jpg' %}" data-speed="0.7">
+    <section class="parallax-section" data-parallax data-src="{% static 'img/bg.jpg' %}" data-speed="0.7">
     </section>
 {% endblock %}
