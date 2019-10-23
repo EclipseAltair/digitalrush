@@ -4,7 +4,7 @@ from django.db import models
 
 class Client(models.Model):
     name = models.CharField(max_length=32, null=False, blank=False, verbose_name='Имя')
-    phone = models.CharField(max_length=12, null=False, blank=False, verbose_name='Телефон')
+    phone = models.CharField(max_length=16, null=False, blank=False, verbose_name='Телефон')
 
     def __str__(self):
         return '{}'.format(self.name)

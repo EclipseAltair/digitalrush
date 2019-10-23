@@ -7,13 +7,13 @@ from .forms import ClientForm
 
 
 def main(request):
-    return render(request, 'main/index.html', locals())
+    return render(request, 'main/index.html')
 
 def development(request):
-    return render(request, 'main/development.html', locals())
+    return render(request, 'main/development.html')
 
 def promotion(request):
-    return render(request, 'main/promotion.html', locals())
+    return render(request, 'main/promotion.html')
 
 def prices(request):
     landing, created = Price.objects.get_or_create(name='Лендинг')
@@ -26,7 +26,7 @@ def prices(request):
     return render(request, 'main/prices.html', locals())
 
 def contacts(request):
-    return render(request, 'main/contacts.html', locals())
+    return render(request, 'main/contacts.html')
 
 def feedback(request):
     if request.POST:
@@ -36,7 +36,7 @@ def feedback(request):
             name = request.POST['name']
             phone = request.POST['phone']
             subject = 'Новый клиент!'
-            message = 'Имя: ' + name + '; Номер телефона: ' + phone
+            message = 'Имя: ' + name + ' | Номер телефона: ' + phone
             sender = 'digitalrushmailer@gmail.com'
             recipient = 'info@digitalrush.ru'
             send_mail(subject, message, sender, [recipient], fail_silently=False)

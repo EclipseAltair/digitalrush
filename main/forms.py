@@ -10,7 +10,7 @@ class ClientForm(forms.ModelForm):
         'name': 'name',
         'placeholder': 'Ваше имя'
     }))
-    phone = forms.CharField(max_length=12, required=True, widget=forms.TextInput(attrs={
+    phone = forms.CharField(max_length=16, required=True, widget=forms.TextInput(attrs={
         'id': 'phone',
         'class': 'form-control form-control-lg',
         'name': 'phone',
