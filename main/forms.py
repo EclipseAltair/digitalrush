@@ -14,7 +14,7 @@ class ClientForm(forms.ModelForm):
         'id': 'phone',
         'class': 'form-control form-control-lg',
         'name': 'phone',
-        'placeholder': 'Ваш телефон'
+        'placeholder': '+7(___)___-__-__'
     }))
 
     class Meta:
