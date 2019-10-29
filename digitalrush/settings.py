@@ -13,10 +13,11 @@ DEBUG = False
 ALLOWED_HOSTS = ['92.63.107.29', 'digitalrush.ru', 'localhost']
 
 INSTALLED_APPS = [
-    'grappelli',
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'grappelli.dashboard',
+    'grappelli',
+    'django.contrib.admin',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sitemaps',
@@ -118,6 +119,8 @@ YANDEX_METRICA_COUNTER_ID = '55015417'
 YANDEX_METRICA_WEBVISOR	= True
 YANDEX_METRICA_TRACKHASH = True
 
+GRAPPELLI_INDEX_DASHBOARD = 'digitalrush.dashboard.CustomIndexDashboard'
+GRAPPELLI_ADMIN_TITLE = 'DIGITALRUSH'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 

