@@ -17,7 +17,10 @@
 {% endblock %}
 
 {% block content %}
-    <section class="parallax parallax-screen" data-parallax data-src="{% static 'img/bg.jpg' %}" data-speed="0.3">
+    <section class="parallax-screen parallax-window">
+        <div class="parallax-slider">
+            <img src="{% static 'img/bg.jpg' %}" alt="Создание и продвижение сайтов"/>
+        </div>
         <div class="row align-items-end size-half">
             <div class="col-md-4 mx-auto text-center">
                 <p>
@@ -199,6 +202,9 @@
             </div>
         </div>
     </section>
-    <section class="parallax parallax-section" data-parallax data-src="{% static 'img/bg.jpg' %}" data-speed="0.3">
+    <section class="parallax-section parallax-window">
+        <div class="parallax-slider">
+            <img src="{% static 'img/bg.jpg' %}" alt="Создание и продвижение сайтов"/>
+        </div>
     </section>
 {% endblock %}
