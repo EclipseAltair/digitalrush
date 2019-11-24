@@ -122,6 +122,7 @@ YANDEX_METRICA_TRACKHASH = True
 GRAPPELLI_INDEX_DASHBOARD = 'digitalrush.dashboard.CustomIndexDashboard'
 GRAPPELLI_ADMIN_TITLE = 'DIGITALRUSH'
 
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 
 MEDIA_URL = '/media/'
