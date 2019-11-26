@@ -10,7 +10,7 @@ from .sitemap import StaticViewSitemap
 
 robots = 'User-agent: *\n' \
          'Disallow: /admin\n' \
-         'Sitemap: http://digitalrush.ru/sitemap.xml'
+         'Sitemap: https://digitalrush.ru/sitemap.xml'
 
 sitemaps = {
     'static': StaticViewSitemap,
