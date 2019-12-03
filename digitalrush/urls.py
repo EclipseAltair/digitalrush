@@ -24,16 +24,16 @@ manifest = '{"name":"DigitalRush",' \
            '"background_color":"#000",' \
            '"description":"digital-agency",' \
            '"icons":' \
-            '[{"src":"img/favicon-16x16.png",' \
+            '[{"src":"static/img/favicon-16x16.png",' \
             '"sizes":"16x16",' \
             '"type":"image/png"},' \
-            '{"src":"img/favicon-32x32.png",' \
+            '{"src":"static/img/favicon-32x32.png",' \
             '"sizes":"32x32",' \
             '"type":"image/png"},' \
-            '{"src":"img/favicon-196x196.png",' \
+            '{"src":"static/img/favicon-196x196.png",' \
             '"sizes":"196x196",' \
             '"type":"image/png"},' \
-            '{"src":"img/favicon-512x512.png",' \
+            '{"src":"static/img/favicon-512x512.png",' \
             '"sizes":"512x512",' \
             '"type":"image/png"}]}'
 
