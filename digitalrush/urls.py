@@ -33,7 +33,7 @@ manifest = '{"name":"DigitalRush",' \
             '{"src":"img/favicon-196x196.png",' \
             '"sizes":"196x196",' \
             '"type":"image/png"},' \
-            '{"src":"img/favicon-196x196.png",' \
+            '{"src":"img/favicon-512x512.png",' \
             '"sizes":"512x512",' \
             '"type":"image/png"}]}'
 
