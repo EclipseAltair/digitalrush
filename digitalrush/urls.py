@@ -4,6 +4,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.http import HttpResponse
+from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 from .sitemap import StaticViewSitemap
 
@@ -45,8 +46,9 @@ urlpatterns = [
     path('', include('main.urls')),
     path('robots.txt', lambda r: HttpResponse(robots, content_type="text/plain")),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
-    path('manifest.json', lambda r: HttpResponse(manifest, content_type="application/json"))
-
+    path('manifest.json', lambda r: HttpResponse(manifest, content_type="application/json")),
+    path('sw.min.js', (TemplateView.as_view(template_name="sw.min.js", content_type='application/javascript', )),
+         name='sw.min.js'),
 ] \
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
