@@ -24,8 +24,7 @@ manifest =  '{"name":"DigitalRush",' \
             '"theme_color":"#000",' \
             '"background_color":"#000",' \
             '"description":"digital-agency",' \
-            '"serviceworker":,' \
-            '{"src": "./sw.js"},' \
+            '"serviceworker":{"src": "/sw.js"},' \
             '"icons":' \
             '[{"src":"static/img/favicon-16x16.png",' \
             '"sizes":"16x16",' \
