@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
 var CACHE_NAME = 'digitalrush-cache-v1';
 var urlsToCache = [
   '/',
-  ''
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css',
   '/static/css/style.min.css',
   '/static/js/scripts.min.js',
   '/static/js/parallax.min.js'
