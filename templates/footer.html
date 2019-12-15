@@ -6,7 +6,7 @@
         <div class="col-auto border-primary">
             <h3 class="text-center pt-4 pb-4 border-bot">СВЯЖИТЕСЬ С НАМИ!</h3>
             <p class="helvetica">Хотите заказать услуги или остались вопросы - мы свяжемся с Вами!</p>
-            <form id="feedback" action="{% url 'feedback' %}" method="POST" class="">{% csrf_token %}
+            <form id="feedback" action="{% url 'feedback' %}" method="POST">{% csrf_token %}
                     <label for="name">Имя:</label>
                     {{ form.name }}
                     <label for="phone" class="mt-2">Телефон:</label>
@@ -19,7 +19,7 @@
         <div class="col col-md-3">
             <p>________________</p>
             Телефон: +79115596616
-            <p>e-mail: info@digitalrush.ru</p>
+            <p>email: info@digitalrush.ru</p>
         </div>
         <div class="col col-md-3">
             <p>________________</p>
@@ -27,10 +27,10 @@
             <a href="https://instagram.com/digitalrushru" target="_blank" rel="noopener" aria-label="Instagram" class="social"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="https://www.facebook.com/groups/digitalrushru/about/" target="_blank" rel="noopener" aria-label="Facebook" class="social"><i class="fab fa-facebook fa-2x"></i></a>
         </div>
-        <div class="col col-md-3">
+        <div itemscope itemtype="http://schema.org/Service" class="col col-md-3">
             <p>________________</p>
             © DIGITALRUSH
-            <p>г. Архангельск</p>
+            <p itemprop="areaServed">г. Архангельск</p>
         </div>
     </div>
 </footer>

@@ -17,93 +17,93 @@
 {% endblock %}
 
 {% block content %}
-    <section class="section__black">
+    <section itemscope itemtype="http://schema.org/Service" class="section__black">
         <p class="size-header bg-black"></p>
-        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">ЦЕНЫ</p></h1>
+        <h1 itemprop="name" class="text-center"><p class="pt-5 pb-5 bg-primary">ЦЕНЫ</p></h1>
         <h2 id="dev" class="text-center pt-3 pb-2">РАЗРАБОТКА</h2>
         <div class="row justify-content-center">
-            <div class="col col-sm-5 pt-1 border-conf">
+            <div itemprop="category" class="col col-sm-5 pt-1 border-conf">
                 {{ landing.name }}
             </div>
             <div class="col-4 col-sm-2 col-xl-1 pt-1 border-conf">
                 {{ landing.price }}+ ₽
             </div>
             <div class="col-12 col-sm-auto pt-1 border-conf">
-                <a href="{{ landing.link }}"><strong>ПОДРОБНЕЕ</strong></a>
+                <a itemprop="url" href="{{ landing.link }}"><strong>ПОДРОБНЕЕ</strong></a>
             </div>
             <div class="d-block d-sm-none"> </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col col-sm-5 pt-1 border-conf">
+            <div itemprop="category" class="col col-sm-5 pt-1 border-conf">
                 {{ card.name }}
             </div>
             <div class="col-4 col-sm-2 col-xl-1 pt-1 border-conf">
                 {{ card.price }}+ ₽
             </div>
             <div class="col-12 col-sm-auto pt-1 border-conf">
-                <a href="{{ card.link }}"><strong>ПОДРОБНЕЕ</strong></a>
+                <a itemprop="url" href="{{ card.link }}"><strong>ПОДРОБНЕЕ</strong></a>
             </div>
             <div class="d-block d-sm-none"> </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col col-sm-5 pt-1 border-conf">
+            <div itemprop="category" class="col col-sm-5 pt-1 border-conf">
                 {{ catalog.name }}
             </div>
             <div class="col-4 col-sm-2 col-xl-1 pt-1 border-conf">
                 {{ catalog.price }}+ ₽
             </div>
             <div class="col-12 col-sm-auto pt-1 border-conf">
-                <a href="{{ catalog.link }}"><strong>ПОДРОБНЕЕ</strong></a>
+                <a itemprop="url" href="{{ catalog.link }}"><strong>ПОДРОБНЕЕ</strong></a>
             </div>
             <div class="d-block d-sm-none"> </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col col-sm-5 pt-1 border-conf">
+            <div itemprop="category" class="col col-sm-5 pt-1 border-conf">
                 {{ online_store.name }}
             </div>
             <div class="col-4 col-sm-2 col-xl-1 pt-1 border-conf">
                 {{ online_store.price }}+ ₽
             </div>
             <div class="col-12 col-sm-auto pt-1 border-conf">
-                <a href="{{ online_store.link }}"><strong>ПОДРОБНЕЕ</strong></a>
+                <a itemprop="url" href="{{ online_store.link }}"><strong>ПОДРОБНЕЕ</strong></a>
             </div>
             <div class="d-block d-sm-none"> </div>
         </div>
 
         <h2 id="prom" class="text-center pt-4 pb-2">ПРОДВИЖЕНИЕ</h2>
         <div class="row justify-content-center">
-            <div class="col col-sm-5 pt-1 border-conf">
+            <div itemprop="category" class="col col-sm-5 pt-1 border-conf">
                 {{ seo.name }}
             </div>
             <div class="col-4 col-sm-2 col-xl-1 pt-1 border-conf">
                 {{ seo.price }}+ ₽
             </div>
             <div class="col-12 col-sm-auto pt-1 border-conf">
-                <a href="{{ seo.link }}"><strong>ПОДРОБНЕЕ</strong></a>
+                <a itemprop="url" href="{{ seo.link }}"><strong>ПОДРОБНЕЕ</strong></a>
             </div>
             <div class="d-block d-sm-none"> </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col col-sm-5 pt-1 border-conf">
+            <div itemprop="category" class="col col-sm-5 pt-1 border-conf">
                 {{ smm.name }}
             </div>
             <div class="col-4 col-sm-2 col-xl-1 pt-1 border-conf">
                 {{ smm.price }}+ ₽
             </div>
             <div class="col-12 col-sm-auto pt-1 border-conf">
-                <a href="{{ smm.link }}"><strong>ПОДРОБНЕЕ</strong></a>
+                <a itemprop="url" href="{{ smm.link }}"><strong>ПОДРОБНЕЕ</strong></a>
             </div>
             <div class="d-block d-sm-none"> </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col col-sm-5 pt-1 border-conf">
+            <div itemprop="category" class="col col-sm-5 pt-1 border-conf">
                 {{ context.name }}
             </div>
             <div class="col-4 col-sm-2 col-xl-1 pt-1 border-conf">
                 {{ context.price }}+ ₽
             </div>
             <div class="col-12 col-sm-auto pt-1 border-conf">
-                <a href="{{ context.link }}"><strong>ПОДРОБНЕЕ</strong></a>
+                <a itemprop="url" href="{{ context.link }}"><strong>ПОДРОБНЕЕ</strong></a>
             </div>
             <div class="d-block d-sm-none"> </div>
         </div>

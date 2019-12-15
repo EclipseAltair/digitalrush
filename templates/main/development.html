@@ -17,12 +17,12 @@
 {% endblock %}
 
 {% block content %}
-    <section class="section__black">
+    <section itemscope itemtype="http://schema.org/WebAPI" class="section__black">
         <p class="size-header bg-black"></p>
-        <h1 class="text-center"><p class="pt-5 pb-5 bg-primary">РАЗРАБОТКА САЙТА</p></h1>
+        <h1 class="text-center"><p itemprop="name" class="pt-5 pb-5 bg-primary">РАЗРАБОТКА САЙТА</p></h1>
         <h2 class="text-center pt-5 pb-4">ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ!</h2>
         <div class="row align-items-center">
-            <div class="col-lg">
+            <div itemprop="description" class="col-lg">
                 <ul>
                     <li>
                         <p class="text-indent">
@@ -136,13 +136,13 @@
             </div>
         </div>
     </section>
-    <section class="section__black">
+    <section itemscope itemtype="http://schema.org/WebAPI" class="section__black">
         <h2 class="text-center pt-5 pb-4">РАЗНОВИДНОСТИ САЙТОВ</h2>
         <div class="row">
             <div class="col-md mb-3">
                 <div class="card border-primary mb-3 size-content">
                     <div class="card-header bg-primary border-primary">
-                        <h5 class="pt-4 pb-4">Лендинг</h5>
+                        <h5 itemprop="category" class="pt-4 pb-4">Лендинг</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
@@ -153,7 +153,7 @@
                         </p>
                     </div>
                     <div class="card-footer bg-transparent border-primary">
-                        <a href="{% url 'landing' %}">
+                        <a itemprop="url" href="{% url 'landing' %}">
                             <strong>Подробнее</strong>
                         </a>
                     </div>
@@ -162,7 +162,7 @@
             <div class="col-md mb-3">
                 <div class="card border-primary mb-3 size-content">
                     <div class="card-header bg-primary border-primary">
-                        <h5 class="pt-4 pb-4">Сайт-визитка</h5>
+                        <h5 itemprop="category" class="pt-4 pb-4">Сайт-визитка</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
@@ -174,7 +174,7 @@
                         </p>
                     </div>
                     <div class="card-footer bg-transparent border-primary">
-                        <a href="{% url 'card' %}">
+                        <a itemprop="url" href="{% url 'card' %}">
                             <strong>Подробнее</strong>
                         </a>
                     </div>
@@ -184,7 +184,7 @@
             <div class="col-md mb-3">
                 <div class="card border-primary mb-3 size-content">
                     <div class="card-header bg-primary border-primary">
-                        <h5 class="pt-4 pb-4">Сайт-каталог</h5>
+                        <h5 itemprop="category" class="pt-4 pb-4">Сайт-каталог</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
@@ -196,7 +196,7 @@
                         </p>
                     </div>
                     <div class="card-footer bg-transparent border-primary">
-                        <a href="{% url 'catalog' %}">
+                        <a itemprop="url" href="{% url 'catalog' %}">
                             <strong>Подробнее</strong>
                         </a>
                     </div>
@@ -205,7 +205,7 @@
             <div class="col-md mb-3">
                 <div class="card border-primary mb-3 size-content">
                     <div class="card-header bg-primary border-primary">
-                        <h5 class="pt-4 pb-4">Интернет-магазин</h5>
+                        <h5 itemprop="category" class="pt-4 pb-4">Интернет-магазин</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text">
@@ -216,7 +216,7 @@
                         </p>
                     </div>
                     <div class="card-footer bg-transparent border-primary">
-                        <a href="{% url 'online_store' %}">
+                        <a itemprop="url" href="{% url 'online_store' %}">
                             <strong>Подробнее</strong>
                         </a>
                     </div>
