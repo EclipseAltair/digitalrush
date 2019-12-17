@@ -13,6 +13,8 @@ package-lock.json
 
 
 #Uncoment and delete to deploy
+/static/assets/fonts/
+/static/assets/webfonts/
 /static/assets/sass/
 /static/assets/js/mask.js
 /static/assets/js/common.js
