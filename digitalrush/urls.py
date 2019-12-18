@@ -2,11 +2,14 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from django.conf.urls import handler404, handler500
 from django.conf.urls.static import static
 from django.http import HttpResponse
 from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 from .sitemap import StaticViewSitemap
+from main import views as main_views
+
 
 
 robots = 'User-agent: *\n' \
@@ -52,3 +55,6 @@ urlpatterns = [
 ] \
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = main_views.error_404
+handler500 = main_views.error_500
