@@ -4,19 +4,18 @@
 __pycache__
 .idea/
 .vscode/
-digitalrushenv/
-node_modules/
+/digitalrushenv/
+/node_modules/
 migrations
-static/assets/libs/
-package.json
-package-lock.json
+/static/assets/libs/
+/package.json
+/package-lock.json
 
 
 #Uncoment and delete to deploy
 /static/assets/fonts/
 /static/assets/sass/
-/static/assets/js/mask.js
-/static/assets/js/common.js
+/static/assets/js/
 /static/static/
 /.bowerrc
 /gulpfile.js
