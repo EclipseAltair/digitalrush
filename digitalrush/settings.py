@@ -6,10 +6,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'gx_%xh@)l&l^*y=t7jtxunhv$kz+@5us*k$dn20_dhtn3$xb0u'
 
-# DEBUG = True
 DEBUG = False
 
-# ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['92.63.107.29', 'digitalrush.ru', 'localhost']
 
 INSTALLED_APPS = [
@@ -71,7 +69,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'digitalrush',
-        # 'USER': 'postgres',
         'USER': 'digitalrushuser',
         'PASSWORD': 'Guido!956',
         'HOST': 'localhost',

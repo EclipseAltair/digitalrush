@@ -5,15 +5,17 @@ __pycache__
 .idea/
 .vscode/
 /digitalrushenv/
-/node_modules/
 migrations
+/devmanage.py
+/digitalrush/devsettings.py
+/digitalrush/devurls.py
 /static/assets/libs/
+/node_modules/
 /package.json
 /package-lock.json
 
 
 #Uncoment and delete to deploy
-/static/assets/fonts/
 /static/assets/sass/
 /static/assets/js/
 /static/static/
