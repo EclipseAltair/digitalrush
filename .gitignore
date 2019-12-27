@@ -6,9 +6,6 @@ __pycache__
 .vscode/
 /digitalrushenv/
 migrations
-/devmanage.py
-/digitalrush/devsettings.py
-/digitalrush/devurls.py
 /static/assets/libs/
 /node_modules/
 /package.json
@@ -16,6 +13,9 @@ migrations
 
 
 #Uncoment and delete to deploy
+/devmanage.py
+/digitalrush/devsettings.py
+/digitalrush/devurls.py
 /static/assets/sass/
 /static/assets/js/
 /static/static/
