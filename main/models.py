@@ -3,8 +3,8 @@ from django.db import models
 
 
 class Client(models.Model):
-    name = models.CharField(max_length=32, null=False, blank=False, verbose_name='Имя')
-    phone = models.CharField(max_length=16, null=False, blank=False, verbose_name='Телефон')
+    name = models.CharField('Имя', max_length=32, null=False, blank=False)
+    phone = models.CharField('Телефон', max_length=16, null=False, blank=False)
 
     def __str__(self):
         return '{}'.format(self.name)
@@ -14,9 +14,9 @@ class Client(models.Model):
         verbose_name_plural = 'Клиенты'
 
 class Price(models.Model):
-    name = models.CharField(default='Вид', max_length=128, verbose_name="Название")
-    price = models.PositiveIntegerField(default=0, verbose_name="Цена")
-    link = models.CharField(default='url', max_length=128, verbose_name="Ссылка")
+    name = models.CharField('Название', default='Вид', max_length=128)
+    price = models.PositiveIntegerField('Цена', default=0)
+    link = models.CharField('Ссылка', default='url', max_length=128)
 
     def __str__(self):
         return '{}'.format(self.name)
