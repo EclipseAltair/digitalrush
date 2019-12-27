@@ -2,7 +2,6 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-from django.conf.urls import handler404, handler500
 from django.conf.urls.static import static
 from django.http import HttpResponse
 from django.views.generic import TemplateView
@@ -26,7 +25,7 @@ manifest =  '{"name":"DigitalRush",' \
             '"display":"standalone",' \
             '"theme_color":"#000",' \
             '"background_color":"#000",' \
-            '"description":"digital-agency",' \
+            '"description":"digital-агентство по разработке и продвижению сайтов",' \
             '"serviceworker":{"src": "/sw.js"},' \
             '"icons":' \
             '[{"src":"static/img/favicon-16x16.png",' \
