@@ -18,6 +18,107 @@
 
 {% block content %}
     <section itemscope itemtype="http://schema.org/Service" class="section__black">
-
+        <p class="size-header bg-black"></p>
+        <h1 class="text-center"><p itemprop="name" class="pt-5 pb-5 bg-primary">РЕМОНТ КОМПЬЮТЕРОВ</p></h1>
+        <h2 class="text-center pt-5 pb-4">НАШИ ПРЕИМУЩЕСТВА!</h2>
+        <div class="row align-items-center">
+            <div itemprop="description" class="col-lg">
+                <ul>
+                    <li>
+                        <p class="text-indent">
+                            • Мы выполняем всю работу самостоятельно, все необходимые инструменты имеются в наличии.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Оперативный выезд в течении одного часа на место (г. Архангельск).
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Есть определенный прайс-лист, но о цене услуг всегда можно договориться.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Выезд и диагностика вашего компьютера и программного обеспечения.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Работаем на результат, конечный итог утверждаем вместе с клиентом.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-indent">
+                            • Предоставляем гарантию на месяц! Если у вас произошла та же поломка, то выполним работу бесплатно по гарантийному талону.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg order-first order-lg-last text-center pb-4">
+               <i class="fas fa-wrench fa-10x"></i>
+            </div>
+        </div>
+    </section>
+    <section class="section__black">
+        <h2 class="text-center pt-5 pb-4">ПРОЦЕСС РАБОТЫ</h2>
+        <div class="row align-items-center">
+            <div class="col-lg text-center pb-4">
+                <i class="fas fa-align-justify fa-10x"></i>
+            </div>
+            <div id="accordion" class="col-lg">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <p class="stages">1 этап — Диагностируем поломки</p>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            Проводим анализ Вашего компьютера и программного обеспечения.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            <p class="stages">2 этап — Обсудим детали</p>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Производим опрос по качеству обслуживания вашего устройства.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <p class="stages">3 этап — Ремонт</p>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Работаем на месте или забираем Ваш компьютер к себе, в зависимости от сложности и объёма
+                            ремонта. Процесс занимает от 1 до 3 дней.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                            <p class="stages">4 этап — Итоговый результат</p>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Вы проверяете работу, затем производите оплату. Так же Вы получаете гарантию на месяц. На
+                            основании гарантийного талона, в случае повторной проблемы, мы устраняем поломку бесплатно.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 {% endblock %}
