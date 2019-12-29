@@ -15,6 +15,9 @@ def development(request):
 def promotion(request):
     return render(request, 'main/promotion.html')
 
+def repair(request):
+    return render(request, 'main/repair.html')
+
 def prices(request):
     landing, created = Price.objects.get_or_create(name='Лендинг')
     card, created = Price.objects.get_or_create(name='Сайт-визитка')

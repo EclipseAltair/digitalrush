@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block canonical %}<link rel="canonical" href="https://digitalrush.ru/repair"/>{% endblock %}
+{% block title %}<title>Ремонт компьютеров Архангельск 🛠 Компьютерный мастер в Архангельске</title>{% endblock %}
+{% block description %}<meta name="description" content="Ремонт 🔧 компьютеров в Архангельске. Мастер по починке видеокарты, материнской платы, блока питания дешево.">{% endblock %}
+{% block keywords %}<meta name="keywords" content="ремонт компьютера, починить компьютер, мастер по ремонту компьютеров, починить видеокарту, починить материнскую плату.">{% endblock %}
+{% block og %}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DigitalRush">
+    <meta property="og:title" content="Ремонт компьютеров, видеокарт, материнских плат">
+    <meta property="og:url" content="https://digitalrush.ru/repair">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="https://digitalrush.ru/static/img/og.png">
+    <meta property="og:image:width" content="537">
+    <meta property="og:image:height" content="240">
+{% endblock %}
+
+{% block content %}
+    <section itemscope itemtype="http://schema.org/Service" class="section__black">
+
+    </section>
+{% endblock %}
