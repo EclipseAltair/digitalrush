@@ -1,5 +1,5 @@
 beautifulsoup4==4.8.0
-Django==2.2.8
+Django==3.0.1
 django-analytical==2.5.0
 django-grappelli==2.13.1
 django-livereload-server==0.3.2
