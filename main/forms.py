@@ -16,6 +16,12 @@ class ClientForm(forms.ModelForm):
         'name': 'phone',
         'placeholder': '+7(___)___-__-__'
     }))
+    comment = forms.CharField(max_length=1024, required=False, widget=forms.Textarea(attrs={
+        'id': 'comment',
+        'class': 'form-control form-control-lg',
+        'name': 'comment',
+        'placeholder': 'Опишите Ваши пожелания'
+    }))
 
     class Meta:
         model = Client

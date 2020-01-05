@@ -3,8 +3,9 @@ from django.db import models
 
 
 class Client(models.Model):
-    name = models.CharField('Имя', max_length=32, null=False, blank=False)
-    phone = models.CharField('Телефон', max_length=16, null=False, blank=False)
+    name = models.CharField('Имя', max_length=32, blank=False)
+    phone = models.CharField('Телефон', max_length=16, blank=False)
+    comment = models.TextField('Комментарий', max_length=1024, blank=True)
 
     def __str__(self):
         return '{}'.format(self.name)

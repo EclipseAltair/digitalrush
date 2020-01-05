@@ -35,8 +35,9 @@ def feedback(request):
             form.save()
             name = request.POST['name']
             phone = request.POST['phone']
+            comment = request.POST['comment']
             subject = 'Новый клиент!'
-            message = 'Имя: ' + name + ' | Номер телефона: ' + phone
+            message = 'Имя: ' + name + ' | Номер телефона: ' + phone + "\nКомментарий: " + comment
             sender = 'digitalrushmailer@gmail.com'
             recipient = 'info@digitalrush.ru'
             send_mail(subject, message, sender, [recipient], fail_silently=False)
