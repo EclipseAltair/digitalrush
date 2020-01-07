@@ -4,6 +4,7 @@
 __pycache__
 .idea/
 .vscode/
+/digitalrush/secret.py
 /digitalrushenv/
 migrations
 /static/assets/libs/

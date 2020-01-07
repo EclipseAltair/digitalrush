@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
+from .secret import *
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'gx_%xh@)l&l^*y=t7jtxunhv$kz+@5us*k$dn20_dhtn3$xb0u'
+SECRET_KEY = SECRET_KEY
 
 DEBUG = False
 
@@ -68,9 +69,9 @@ WSGI_APPLICATION = 'digitalrush.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'digitalrush',
-        'USER': 'digitalrushuser',
-        'PASSWORD': 'Guido!956',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -107,10 +108,8 @@ SITE_ID = 1
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'digitalrushmailer@gmail.com'
-EMAIL_HOST_PASSWORD = '3ts-SXg-Ndh-dbE'
-DEFAULT_FROM_EMAIL = 'digitalrush'
-DEFAULT_TO_EMAIL = 'digitalrushmailer@gmail.com'
+EMAIL_HOST_USER = EMAIL
+EMAIL_HOST_PASSWORD = EMAIL_PASSWORD
 
 YANDEX_METRICA_COUNTER_ID = '55015417'
 YANDEX_METRICA_WEBVISOR	= True
