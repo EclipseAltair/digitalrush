@@ -6,4 +6,5 @@ from .models import OnlineStoreConfiguration
 class OnlineStoreConfigurationAdmin(admin.ModelAdmin):
     list_display = [field.name for field in OnlineStoreConfiguration._meta.fields]
 
+
 admin.site.register(OnlineStoreConfiguration, OnlineStoreConfigurationAdmin)

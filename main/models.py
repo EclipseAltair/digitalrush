@@ -14,6 +14,7 @@ class Client(models.Model):
         verbose_name = 'клиента'
         verbose_name_plural = 'Клиенты'
 
+
 class Price(models.Model):
     name = models.CharField('Название', default='Вид', max_length=128)
     price = models.PositiveIntegerField('Цена', default=0)

@@ -9,11 +9,14 @@ from .forms import ClientForm
 def main(request):
     return render(request, 'main/index.html')
 
+
 def development(request):
     return render(request, 'main/development.html')
 
+
 def promotion(request):
     return render(request, 'main/promotion.html')
+
 
 def prices(request):
     landing, created = Price.objects.get_or_create(name='Лендинг')
@@ -25,8 +28,10 @@ def prices(request):
     context, created = Price.objects.get_or_create(name='Контекстная реклама')
     return render(request, 'main/prices.html', locals())
 
+
 def contacts(request):
     return render(request, 'main/contacts.html')
+
 
 def feedback(request):
     if request.POST:
@@ -43,8 +48,10 @@ def feedback(request):
             send_mail(subject, message, sender, [recipient], fail_silently=False)
             return JsonResponse({})
 
+
 def error_404(request, exception=None):
     return render(request, '404.html', status=404)
+
 
 def error_500(request):
     return render(request, '500.html', status=500)
