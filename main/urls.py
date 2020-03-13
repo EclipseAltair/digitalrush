@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.urls import path, include
 from . import views
+from .decorators import check_recaptcha
 
 
 urlpatterns = [
@@ -16,5 +17,5 @@ urlpatterns = [
     path('promotion/', include('context.urls')),
     path('prices', views.prices, name='prices'),
     path('contacts', views.contacts, name='contacts'),
-    path('feedback', views.feedback, name='feedback')
+    path('feedback', check_recaptcha(views.feedback), name='feedback')
 ]

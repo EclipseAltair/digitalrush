@@ -36,7 +36,7 @@ def contacts(request):
 def feedback(request):
     if request.POST:
         form = ClientForm(request.POST)
-        if form.is_valid():
+        if form.is_valid() and request.recaptcha_is_valid:
             form.save()
             name = request.POST['name']
             phone = request.POST['phone']

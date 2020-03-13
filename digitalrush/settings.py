@@ -41,7 +41,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'livereload.middleware.LiveReloadScript',
 ]
 
 ROOT_URLCONF = 'digitalrush.urls'
@@ -114,6 +113,8 @@ EMAIL_HOST_PASSWORD = EMAIL_PASSWORD
 YANDEX_METRICA_COUNTER_ID = '55015417'
 YANDEX_METRICA_WEBVISOR	= True
 YANDEX_METRICA_TRACKHASH = True
+
+GOOGLE_RECAPTCHA_SECRET_KEY = '6Le-IOEUAAAAACo8dRaGtXMX2-UtK-TiL3EDNs_N'
 
 GRAPPELLI_INDEX_DASHBOARD = 'digitalrush.dashboard.CustomIndexDashboard'
 GRAPPELLI_ADMIN_TITLE = 'DIGITALRUSH'
