@@ -9,7 +9,7 @@ def check_recaptcha(function):
     def wrap(request, *args, **kwargs):
         request.recaptcha_is_valid = None
         if request.method == 'POST':
-            recaptcha_response = request.POST.get('g-recaptcha-response')
+            recaptcha_response = request.POST['g_recaptcha_response']
             data = {
                 'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY,
                 'response': recaptcha_response
@@ -20,7 +20,7 @@ def check_recaptcha(function):
                 request.recaptcha_is_valid = True
             else:
                 request.recaptcha_is_valid = False
-                messages.error(request, 'Invalid reCAPTCHA. Please try again.')
+                messages.error(request, 'Ошибка reCAPTCHA. Попытайтесь снова.')
         return function(request, *args, **kwargs)
 
     wrap.__doc__ = function.__doc__
