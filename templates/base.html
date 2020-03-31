@@ -1,6 +1,4 @@
 {% load static %}
-{% load yandex_metrica %}
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,45 +12,66 @@
     {% block keywords %}{% endblock %}
     {% block og %}{% endblock %}
     <link rel="manifest" href="/manifest.json">
-    {% yandex_metrica %}
-    <meta name="yandex-verification" content="eb0cb5959c13dad8" />
-    <meta name="google-site-verification" content="I5AKwcfRUm7Xs14VUD5Ht1roE5KoFtruY9ZRrcqnQlk" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55015417, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/55015417" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta name="yandex-verification" content="eb0cb5959c13dad8"/>
+    <meta name="google-site-verification" content="I5AKwcfRUm7Xs14VUD5Ht1roE5KoFtruY9ZRrcqnQlk"/>
     <!-- Template Basic Images -->
-    <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16" />
-    <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{% static 'img/favicon-96x96.png' %}" sizes="96x96" />
-    <link rel="icon" type="image/png" href="{% static 'img/favicon-128x128.png' %}" sizes="128x128" />
-    <link rel="icon" type="image/png" href="{% static 'img/favicon-196x196.png' %}" sizes="196x196" />
-    <link rel="icon" type="image/png" href="{% static 'img/favicon-512x512.png' %}" sizes="512x512" />
-    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/apple-touch-icon-57x57.png' %}" />
-    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/apple-touch-icon-60x60.png' %}" />
-    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png' %}" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-touch-icon-76x76.png' %}" />
-    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}" />
-    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/apple-touch-icon-120x120.png' %}" />
-    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/apple-touch-icon-144x144.png' %}" />
-    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/apple-touch-icon-152x152.png' %}" />
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-96x96.png' %}" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-128x128.png' %}" sizes="128x128"/>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-196x196.png' %}" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-512x512.png' %}" sizes="512x512"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/apple-touch-icon-57x57.png' %}"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/apple-touch-icon-60x60.png' %}"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png' %}"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-touch-icon-76x76.png' %}"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/apple-touch-icon-120x120.png' %}"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/apple-touch-icon-144x144.png' %}"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/apple-touch-icon-152x152.png' %}"/>
     <meta name="application-name" content="&nbsp;"/>
-    <meta name="msapplication-TileColor" content="#000" />
-    <meta name="msapplication-TileImage" content="{% static 'img/mstile-144x144.png' %}" />
-    <meta name="msapplication-square70x70logo" content="{% static 'img/mstile-70x70.png' %}" />
-    <meta name="msapplication-square150x150logo" content="{% static 'img/mstile-150x150.png' %}" />
-    <meta name="msapplication-square310x310logo" content="{% static 'img/mstile-310x310.png' %}" />
-    <meta name="msapplication-wide310x150logo" content="{% static 'img/mstile-310x150.png' %}" />
+    <meta name="msapplication-TileColor" content="#000"/>
+    <meta name="msapplication-TileImage" content="{% static 'img/mstile-144x144.png' %}"/>
+    <meta name="msapplication-square70x70logo" content="{% static 'img/mstile-70x70.png' %}"/>
+    <meta name="msapplication-square150x150logo" content="{% static 'img/mstile-150x150.png' %}"/>
+    <meta name="msapplication-square310x310logo" content="{% static 'img/mstile-310x310.png' %}"/>
+    <meta name="msapplication-wide310x150logo" content="{% static 'img/mstile-310x150.png' %}"/>
     <!-- Styles -->
     <link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
 </head>
 <body>
-    {% include 'header.html' %}
-    {% block content %}
-    {% endblock %}
-    {% include 'footer.html' %}
-    <!-- Scripts -->
-    <script src="{% static 'dist-js/scripts.min.js' %}"></script>
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-    <script>
-        var $url="digi" + "talr" + "ush.ru";if($url!==location.host){location.href='https://'+$url;}
-    </script>
-    <script src="/sw.js"></script>
+{% include 'header.html' %}
+{% block content %}
+{% endblock %}
+{% include 'footer.html' %}
+<!-- Scripts -->
+<script src="{% static 'dist-js/scripts.min.js' %}"></script>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+<script>
+    var $url="digi"+"talr"+"ush.ru";if($url!==location.host){location.href='https://'+$url;}
+</script>
+<script src="/sw.js"></script>
 </body>
 </html>

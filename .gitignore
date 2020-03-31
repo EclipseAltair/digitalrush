@@ -1,25 +1,27 @@
-*.sqlite3
-*.pyc
-*~
-__pycache__
+# IDE
 .idea/
-.vscode/
-/digitalrush/secret.py
-/digitalrushenv/
-migrations
-/static/assets/libs/
-/node_modules/
-/package.json
-/package-lock.json
 
+# Python
+*.pyc
+__pycache__
 
-#Uncoment and delete to deploy
-/devmanage.py
+# Django
+/drenv/
+migrations/
 /digitalrush/devsettings.py
 /digitalrush/devurls.py
+/digitalrush/secret.py
+/static/assets/libs/
 /static/assets/sass/
 /static/assets/js/
 /static/static/
+/devmanage.py
+/requirements-dev.txt
+
+# Other
+/node_modules/
 /.bowerrc
 /gulpfile.js
+/package.json
+/package-lock.json
 /README.md
