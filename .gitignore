@@ -21,6 +21,7 @@ migrations/
 # Other
 /node_modules/
 /.bowerrc
+/.editorconfig
 /gulpfile.js
 /package.json
 /package-lock.json
