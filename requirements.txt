@@ -1,6 +1,6 @@
 certifi==2019.11.28
 chardet==3.0.4
-Django==2.2.11
+Django==2.2.21
 django-grappelli==2.14.1
 idna==2.9
 psycopg2==2.8.4
