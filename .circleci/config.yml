@@ -1,0 +1,29 @@
+version: 2.1
+
+jobs:
+  deploy:
+    machine:
+      image: ubuntu-2004:202104-01
+    parameters:
+      environment:
+        type: enum
+        enum: ["master"]
+    steps:
+      - checkout
+      - run:
+          name: "Install dependencies"
+          command: echo "Hello"
+
+
+workflows:
+  deploy:
+    jobs:
+      - deploy:
+          context:
+            - master
+            - base
+          environment: master
+          filters:
+            branches:
+              only: master
+
